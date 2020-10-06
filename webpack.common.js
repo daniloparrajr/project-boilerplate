@@ -5,8 +5,9 @@ module.exports = {
     entry: './src/js/index.js',
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/assets/template.html",
-            favicon: './src/images/favicon.ico'
+            template: "./src/views/index.pug",
+            favicon: './src/images/favicon.ico',
+            inject: true
         }),
     ],
     output: {
@@ -36,8 +37,9 @@ module.exports = {
                 }
             },
             {
-                test: /\.(html)$/,
-                use: ['html-loader'],
+                test: /\.pug$/,
+                include: path.join(__dirname, 'src'),
+                loaders: [ 'pug-loader' ]
             },
         ],
     },
