@@ -1,5 +1,5 @@
 function SayHello() {
-    console.log('hello');
+    console.log('nice!');
 }
 
 export default SayHello;
