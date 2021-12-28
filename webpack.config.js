@@ -11,13 +11,13 @@ const config = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[hash].bundle.js',
     },
-    devtool: 'inline-source-map',
+    devtool: 'eval-cheap-source-map',
     devServer: {
         static: {
             directory: path.join(__dirname, 'dist'),
         },
         compress: true,
-        hot: 'only',
+        hot: true,
     },
     plugins: [
         new HtmlWebpackPlugin({

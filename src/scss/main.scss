@@ -1,5 +1,5 @@
-@import "./abstracts/abstracts";
-
-@import "./base/base";
-
-@import "./layouts/layouts";
+@use "./base";
+@use "./layouts";
+@use "./pages";
+@use "./components";
+@use "./utilities";
