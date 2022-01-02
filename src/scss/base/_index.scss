@@ -1,3 +1,4 @@
-@forward "reset";
-@forward "base";
-@forward "typography";
+@forward "../vendors/the-new-css-reset";
+@forward "body";
+@forward "headings";
+@forward "copy";

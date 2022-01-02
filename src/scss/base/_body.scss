@@ -1,0 +1,6 @@
+@use '../abstracts' as a;
+
+body {
+  font-size: a.rem(16px);
+  line-height: 1.5;
+}
